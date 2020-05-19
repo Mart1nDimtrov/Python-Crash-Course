@@ -52,6 +52,23 @@ print(site_online == 1)
 print("\nIs site offline? I predict True.")
 print(site_online == 0)
 
+channel = 'amc'
+print("\nIs channel AMC? I predict True.")
+print(channel.lower() == 'amc')
+print("\nIs channel NBC? I predict False.")
+print(channel.lower() == 'nbc')
+
+lucky_num = 7
+print("\nIs your lucky number 6 or 7? I predict True.")
+print(lucky_num == 7 or lucky_num == 6)
+print("\nIs your lucky number 8 or 9? I predict False.")
+print(lucky_num == 9 or lucky_num == 9)
+
+foods = ['burger','pizza','spaghetti']
+print("\nIs spaghetti in the list of foods? I predict True.")
+print('spaghetti' in foods)
+print("\nIs pastrami in the list of foods? I predict False.")
+print('pastrami' in foods)
 
 
 
