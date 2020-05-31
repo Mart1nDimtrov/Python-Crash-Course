@@ -5,13 +5,16 @@
 #friends and get some actual data for your program.
 ['bob','jeremiah','linda','tom','jerry']
 favorite_numbers = {
-	'bob':15,
-	'jeremiah':13,
-	'linda':12,
-	'tom':11,
-	'jerry':10,
+	'bob':[14,232,231,32],
+	'jeremiah':[13,4,22],
+	'linda':[12,9,15],
+	'tom':[11,2],
+	'jerry':[10],
 }
 
-for name in favorite_numbers:
-	number = favorite_numbers[name]
-	print(f"{name.title()}'s favorite number is: {number}")
+for name, numbers in favorite_numbers.items():
+	if len(numbers) > 1: 
+		print(f"{name.title()}'s favorite numbers are:")
+	else:
+		print(f"{name.title()}'s favorite number is:")
+	print(', '.join(str(n) for n in numbers))
