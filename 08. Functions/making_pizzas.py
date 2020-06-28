@@ -1,5 +1,5 @@
 # import specific function from module
-from pizza import make_pizza
+from pizza import *
 
 # call the imported function 
 make_pizza(16,'pepperoni')
