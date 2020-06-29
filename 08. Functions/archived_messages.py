@@ -4,6 +4,8 @@
 #messages.
 
 def show_messages(messages,sent_messages):
+	'''Imitates sending messages by moving them
+	from one list to another'''
 	while messages:
 		message = messages.pop()
 		print(message)
