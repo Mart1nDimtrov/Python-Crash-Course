@@ -20,6 +20,7 @@ class Restaurant:
 	def open_restaurant(self):
 		print('The restaurant is open!')
 
+		
 new_restaurant = Restaurant('Michelline','gourme')
 print(f'Restaurant - {new_restaurant.name.title()}')
 print(f'Cuisine type - {new_restaurant.cuisine_type}')
