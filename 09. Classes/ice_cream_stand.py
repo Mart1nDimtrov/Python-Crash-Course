@@ -5,19 +5,10 @@
 #flavors that stores a list of ice cream flavors. Write a method that displays 
 #these flavors. Create an instance of IceCreamStand, and call this method.
 
-class Restaurant:
-	"""A simple attempt to model a restaurant.""" 
-	def __init__(self, name, cuisine_type):
-		"""Initialize name and cuisine_type attributes."""
-		self.name = name
-		self.cuisine_type = cuisine_type
+"""A module that stores the class to represent an ice cream stand."""
 
-	def describe_restaurant(self):
-		print(f'This is the {self.name.title()} restaurant!')
-		print(f'It serves {self.cuisine_type} food.')
-
-	def open_restaurant(self):
-		print('The restaurant is open!')
+#call the Restaurant from a module
+from restaurant import Restaurant
 
 class IceCreamStand(Restaurant):
 	"""A simple attempt to model a restaurant."""
@@ -32,8 +23,5 @@ class IceCreamStand(Restaurant):
 		for flavor in self.flavors:
 			print(flavor.title())
 
-new_restaurant = IceCreamStand('Raffy','ice cream')
-print(f'Restaurant - {new_restaurant.name.title()}')
-print(f'Cuisine type - {new_restaurant.cuisine_type}')
-new_restaurant.list_flavors()
+
 

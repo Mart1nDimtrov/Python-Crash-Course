@@ -6,6 +6,8 @@
 #Make an instance called restaurant from your class. 
 #Print the two attributes individually, and then call both methods.
 
+"""A module that stores the class to represent a restaurant."""
+
 class Restaurant:
 	"""A simple attempt to model a restaurant.""" 
 	def __init__(self, name, cuisine_type):
@@ -21,8 +23,3 @@ class Restaurant:
 		print('The restaurant is open!')
 
 		
-new_restaurant = Restaurant('Michelline','gourme')
-print(f'Restaurant - {new_restaurant.name.title()}')
-print(f'Cuisine type - {new_restaurant.cuisine_type}')
-new_restaurant.describe_restaurant()
-new_restaurant.open_restaurant()

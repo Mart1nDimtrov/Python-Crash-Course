@@ -2,19 +2,8 @@
 #different instances from the class, and call describe_restaurant() for each 
 #instance.
 
-class Restaurant:
-	"""A simple attempt to model a restaurant.""" 
-	def __init__(self, name, cuisine_type):
-		"""Initialize name and cuisine_type attributes."""
-		self.name = name
-		self.cuisine_type = cuisine_type
-
-	def describe_restaurant(self):
-		print(f'This is the {self.name.title()} restaurant!')
-		print(f'It serves {self.cuisine_type} food.')
-
-	def open_restaurant(self):
-		print('The restaurant is open!')
+#call the restaurant class from a module
+from restaurant import Restaurant
 
 restaurant_1 = Restaurant('La Pergola','italian')
 restaurant_2 = Restaurant('Sushi Ueda','sushi')
