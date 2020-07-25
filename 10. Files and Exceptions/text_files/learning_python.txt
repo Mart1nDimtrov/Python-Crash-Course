@@ -1,0 +1,3 @@
+In Python you can create variables and store data in them.
+In Python you automate tasks and avoid repetition of code with loops and functions.
+In Python you can model the real world with classes and objects.
