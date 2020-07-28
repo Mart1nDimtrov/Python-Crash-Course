@@ -1,4 +1,4 @@
-file_name = 'text_files\\programming.py'
+file_name = 'text_files\\programming.txt'
 
 #create and write to the file
 with open(file_name, 'w') as file_object:
