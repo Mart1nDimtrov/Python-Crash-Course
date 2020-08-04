@@ -1,0 +1,2 @@
+text_files\siddhartha.txt
+text_files\animal_farm.txt
