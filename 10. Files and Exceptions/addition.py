@@ -9,9 +9,13 @@
 print("Give me two numbers on seperate lines and I'll add them:")
 try:
 	number_1 = int(input("First number: "))
-	number_2 = int(input("Second number: "))
 except ValueError:
-	print('One of your numbers is not in the right format.')
+	print(f'Your first number is not in the right format.')
 else:
-	result = number_1 + number_2
-	print(f"The result is: {result}")
+	try:
+		number_2 = int(input("Second number: "))
+	except ValueError:
+		print(f'Your second number is not in the right format.')
+	else:
+		result = number_1 + number_2
+		print(f"The result is: {result}")
