@@ -19,7 +19,7 @@
 #Try counting 'the ', with a space in the string, and see how much lower your 
 #count is.
 
-def count_words(filename):
+def count_word(filename):
 	"""Count the approximate number of words in a file."""
 	#store the missing files in a seperate file
 	not_found_log = 'text_files\\missing_files.txt'
@@ -40,4 +40,4 @@ filenames = ['alice.txt', 'siddhartha.txt', 'moby_dick.txt', 'little_women.txt',
 
 
 for file_name in filenames:
-	count_words(file_name)
+	count_word(file_name)
